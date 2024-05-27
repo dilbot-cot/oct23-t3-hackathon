@@ -7,7 +7,7 @@ import "../styles/navbar.css"
 
 export default function NavBar() {
   return (
-    <Navbar className="bg-body-tertiary">
+    <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
         <Navbar.Brand href="#home">
             <img 

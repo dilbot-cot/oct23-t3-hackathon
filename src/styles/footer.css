@@ -1,0 +1,42 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100dvw;
+    align-items: center;
+    height: 60px;
+    background-color: #778DA9;
+
+    .footer-left{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+        width: 50%;
+    }
+    
+    img {
+        height: 48px;
+    }
+
+    .footer-right {
+        display: flex;
+        margin-right: 5vw;
+        justify-content: flex-end;
+        align-items: center;
+        height: 100%;
+        width: 50%;
+
+        img {
+            height: 34px;
+        }
+    } 
+}
+
+#send-logo {
+    filter: none;
+    transition: filter 0.3s ease;
+}
+
+button:hover #send-logo {
+    filter: invert(100%);
+}
