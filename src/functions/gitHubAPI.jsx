@@ -1,6 +1,6 @@
 import { Octokit } from '@octokit/core';
 
-export default async function fetchRepos () {
+export default async function fetchRepos (sortType = 'updated') {
   const token = import.meta.env.VITE_GITHUB_TOKEN;
   if (!token) {
     console.error('GitHub token is not defined');
@@ -16,7 +16,7 @@ export default async function fetchRepos () {
       headers: {
         'X-GitHub-Api-Version': '2022-11-28',
       },
-      sort: 'updated'
+      sort: sortType
     });
 
     return response.data;
