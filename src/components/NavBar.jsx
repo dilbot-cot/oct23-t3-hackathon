@@ -22,13 +22,12 @@ export default function NavBar() {
         <Navbar.Collapse className="justify-content-end">
             <Nav>
                 <Nav.Link href="/">Home</Nav.Link>
-                <Nav.Link href="#abount">About</Nav.Link>
                 <NavDropdown title="GitHub Links" id="basic-nav-dropdown">
                     <NavDropdown.Item href="https://github.com/dilbot-cot">My Profile</NavDropdown.Item>
                     <NavDropdown.Divider />
                     <NavDropdown.Item href="/repos">GitHub Repo List</NavDropdown.Item>
                 </NavDropdown>
-                <Nav.Link href="#contact">Contact</Nav.Link>
+                <Nav.Link href="/contact">Contact</Nav.Link>
 
 
             </Nav>

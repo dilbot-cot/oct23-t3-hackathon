@@ -1,0 +1,41 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #E0E1DD;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-width: 80vw;
+}
+
+.form-section {
+    min-width: 40vw;
+}
+
+.other-contact {
+    max-width: 40vw;
+    align-self: baseline;
+    text-align: center;
+    h1 {
+        font-size: 24px;
+    }
+}
+
+.contact-info {
+    border: 1px solid #0D1B2A;
+    border-radius: 24px;
+    text-align: center;
+    margin: 1rem 0;
+    padding: .5rem;
+    p {
+        font-size: 12px;
+        margin: 0;
+    }
+    a {
+        font-size: 12px;
+    }
+}
