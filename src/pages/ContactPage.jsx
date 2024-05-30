@@ -13,17 +13,17 @@ export default function ContactPage() {
                 <Form>
                     <Form.Group className="mb-3" controlId="formContactEmail">
                         <Form.Label>Email address</Form.Label>
-                        <Form.Control type="email" placeholder="name@example.com" />
+                        <Form.Control type="email" placeholder="name@example.com" disabled />
                     </Form.Group>
 
                     <Form.Group className="mb-3" controlId="formContactSubject">
                         <Form.Label>Subject Line</Form.Label>
-                        <Form.Control as="textarea" rows={1} />
+                        <Form.Control as="textarea" rows={1} placeholder="Not accepting input" disabled/>
                     </Form.Group>
 
                     <Form.Group className="mb-3" controlId="formContactBody">
                         <Form.Label>Content</Form.Label>
-                        <Form.Control as="textarea" rows={3} />
+                        <Form.Control as="textarea" rows={3} placeholder="Form currently not in use. Please use alternative contact method"disabled />
                     </Form.Group>
                     <Button variant='primary' type='submit' style={{borderColor: '#0D1B2A', backgroundColor: '#0D1B2A'}}>
                         Submit
@@ -31,7 +31,7 @@ export default function ContactPage() {
                 </Form>
                 </div>
                 <div className='other-contact'>
-                    <h1>Other contact</h1>
+                    <h1>Other contact methods</h1>
                     <div className='contact-info'>
                         <h4>Phone:</h4>
                         <p>+61 412 345 678</p>
