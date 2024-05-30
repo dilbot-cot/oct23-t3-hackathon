@@ -52,7 +52,6 @@ export default function GitHubRepos() {
                 </ToggleButton>
         ))}
       </ButtonGroup>
-          {/* <button onClick={handleSortChange}>Sort by {sortType === 'updated' ? 'Created' : 'Updated'}</button> */}
       </div>
       <div className='cards'>
           {repos.map(repo => <RepositoryCard key={repo.id} repo={repo} />)}

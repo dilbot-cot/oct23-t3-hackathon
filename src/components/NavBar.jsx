@@ -7,9 +7,9 @@ import "../styles/navbar.css"
 
 export default function NavBar() {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar expand="lg" className='navbar-style'>
       <Container>
-        <Navbar.Brand href="#home">
+        <Navbar.Brand href="/">
             <img 
                 src={Logo}
                 width="30"
@@ -21,15 +21,12 @@ export default function NavBar() {
         <Navbar.Toggle />
         <Navbar.Collapse className="justify-content-end">
             <Nav>
-                <Nav.Link href="#home">Home</Nav.Link>
+                <Nav.Link href="/">Home</Nav.Link>
                 <Nav.Link href="#abount">About</Nav.Link>
                 <NavDropdown title="GitHub Links" id="basic-nav-dropdown">
                     <NavDropdown.Item href="https://github.com/dilbot-cot">My Profile</NavDropdown.Item>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item href="link1">Repo 1</NavDropdown.Item>
-                    <NavDropdown.Item href="link2">Repo 2</NavDropdown.Item>
-                    <NavDropdown.Item href="link3">Repo 3</NavDropdown.Item>
-
+                    <NavDropdown.Item href="/repos">GitHub Repo List</NavDropdown.Item>
                 </NavDropdown>
                 <Nav.Link href="#contact">Contact</Nav.Link>
 
@@ -40,21 +37,3 @@ export default function NavBar() {
     </Navbar>
   );
 }
-
-
-
-//             <Nav.Link href="/">Home</Nav.Link>
-//             <Nav.Link href="#link">About Me</Nav.Link>
-//             <NavDropdown title="GitHub Links" id="github-dropdown">
-//               <NavDropdown.Item href="#action/3.1">Repo 1</NavDropdown.Item>
-//               <NavDropdown.Item href="#action/3.2">Repo 2</NavDropdown.Item>
-//               <NavDropdown.Item href="#action/3.3">Repo 3</NavDropdown.Item>
-//               <NavDropdown.Divider />
-//               <NavDropdown.Item href="https://github.com/dilbot-cot">Profile</NavDropdown.Item>
-//             </NavDropdown>
-//             <Nav.Link href="#link">Contact Me</Nav.Link>
-
-//         </Navbar.Collapse>
-//       </Container>
-//     </Navbar>
-//   );

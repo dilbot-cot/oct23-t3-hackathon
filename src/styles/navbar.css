@@ -1,4 +1,9 @@
 NavBar container {
     display: flex;
     justify-content: center;
+    background-color: #0D1B2A;
+}
+
+.navbar-style {
+    background-color: #778DA9;
 }

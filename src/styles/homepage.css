@@ -1,0 +1,35 @@
+.main-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.wrapper {
+    background-color: #e0e1dd;
+}
+
+.image-content {
+    max-width: 40vw;
+    img {
+        max-height: 50vh;
+        border-radius: 24px;
+    }
+}
+
+.word-content {
+    max-width: 40vw;
+    border-radius: 24px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #415a77;
+    color: #E0E1DD;
+    box-shadow: 0 0 2rem #778DA9;
+    h4 {
+        text-decoration: underline #E0E1DD 1px;
+    }
+    p {
+        font-size: 12px;
+    }
+}
