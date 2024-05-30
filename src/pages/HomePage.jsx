@@ -5,7 +5,7 @@ export default function HomePage() {
 
     return (
         <div className="wrapper">
-            <h1>Dillon's Portfolio</h1>
+            <h1 className='title'>Dillon's Portfolio</h1>
             <div className="main-content">
                 <div className="image-content">
                     <img src={headshot} />

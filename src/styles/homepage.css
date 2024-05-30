@@ -3,13 +3,19 @@
     flex-direction: column;
     align-items: center;
     background-color: #E0E1DD;
+    justify-content: center;
+    padding-top: 2rem;
 }
 
+.title {
+    margin-bottom: 2rem;
+}
 .main-content {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    min-width: 100vw;
+    width: 100%;
+    flex: 1
 }
 
 .image-content {
@@ -40,5 +46,11 @@
     .word-content {
         max-width: 80vw;
         margin-bottom: 1rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .image-content img {
+        max-width: 428px;
     }
 }
