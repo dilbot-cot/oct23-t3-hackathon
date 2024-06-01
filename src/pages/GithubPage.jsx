@@ -18,9 +18,7 @@ export default function GitHubRepos() {
     getRepos();
   }, [sortType]);
 
-
-  const [checked, setChecked] = useState(false);
-  const [radioValue, setRadioValue] = useState('1')
+  const [radioValue, setRadioValue] = useState('updated')
 
   const radios = [
     {name: 'Created Date', value: 'created'},
@@ -42,7 +40,7 @@ export default function GitHubRepos() {
                 key={idx}
                 id={`radio-${idx}`}
                 type="radio"
-                variant={idx % 2 ? 'outline-success' : 'outline-danger'}
+                variant={idx % 2 ? 'outline-danger' : 'outline-success'}
                 name="radio"
                 value={radio.value}
                 checked={radioValue === radio.value}
