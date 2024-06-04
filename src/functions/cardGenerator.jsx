@@ -10,7 +10,7 @@ export default function RepositoryCard ({ repo }) {
         <Card.Subtitle style={{ paddingBottom: '.5rem', color: '#c1c3bb'}}>Created Date: {formatDateToAEST(repo.created_at)} AEST</Card.Subtitle>
         <Card.Subtitle style={{ paddingBottom: '.5rem', color: '#c1c3bb'}}>Last Updated: {formatDateToAEST(repo.updated_at)} AEST</Card.Subtitle>
         <Card.Text>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          {repo.description}
         </Card.Text>
         <Card.Link href={repo.html_url} style={{color: '#e0e1dd'}}>Repo Link</Card.Link>
       </Card.Body>
